@@ -7,19 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0083A74325FE259E00DAC98D /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A74225FE259E00DAC98D /* SpeedViewController.swift */; };
+		0083A74625FE26A900DAC98D /* VolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A74525FE26A900DAC98D /* VolumeViewController.swift */; };
+		0083A74925FE385800DAC98D /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A74825FE385800DAC98D /* Temperature.swift */; };
+		0083A74C25FEC47A00DAC98D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A74B25FEC47A00DAC98D /* HistoryViewController.swift */; };
+		0083A74F25FED62C00DAC98D /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A74E25FED62C00DAC98D /* History.swift */; };
+		0083A75225FEEB7000DAC98D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A75125FEEB7000DAC98D /* HistoryTableViewCell.swift */; };
+		0083A75525FFF66400DAC98D /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A75425FFF66400DAC98D /* Length.swift */; };
+		0083A75825FFF9CA00DAC98D /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A75725FFF9CA00DAC98D /* Speed.swift */; };
+		0083A75B25FFFB7B00DAC98D /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A75A25FFFB7B00DAC98D /* Volume.swift */; };
+		0083A75F2600EA1D00DAC98D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083A75E2600EA1D00DAC98D /* SettingViewController.swift */; };
+		00DB259125FB6596004E1C16 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB259025FB6596004E1C16 /* ConversionViewController.swift */; };
+		00DB259425FB6685004E1C16 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB259325FB6685004E1C16 /* WeightViewController.swift */; };
+		00DB259725FB6696004E1C16 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB259625FB6696004E1C16 /* TemperatureViewController.swift */; };
+		00DB259B25FB723D004E1C16 /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DB259A25FB723D004E1C16 /* CustomKeyboard.xib */; };
+		00DB259E25FB72CE004E1C16 /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB259D25FB72CE004E1C16 /* CustomKeyboard.swift */; };
+		00DB25A125FB8436004E1C16 /* LengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB25A025FB8436004E1C16 /* LengthViewController.swift */; };
+		00DB25A725FC194E004E1C16 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB25A625FC194E004E1C16 /* Weight.swift */; };
 		1F3EC87825F904AB00791D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EC87725F904AB00791D6F /* AppDelegate.swift */; };
 		1F3EC87A25F904AB00791D6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EC87925F904AB00791D6F /* SceneDelegate.swift */; };
-		1F3EC87C25F904AB00791D6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EC87B25F904AB00791D6F /* ViewController.swift */; };
 		1F3EC87F25F904AB00791D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EC87D25F904AB00791D6F /* Main.storyboard */; };
 		1F3EC88125F904AD00791D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EC88025F904AD00791D6F /* Assets.xcassets */; };
 		1F3EC88425F904AD00791D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EC88225F904AD00791D6F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0083A74225FE259E00DAC98D /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
+		0083A74525FE26A900DAC98D /* VolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeViewController.swift; sourceTree = "<group>"; };
+		0083A74825FE385800DAC98D /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		0083A74B25FEC47A00DAC98D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0083A74E25FED62C00DAC98D /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		0083A75125FEEB7000DAC98D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		0083A75425FFF66400DAC98D /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
+		0083A75725FFF9CA00DAC98D /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		0083A75A25FFFB7B00DAC98D /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		0083A75E2600EA1D00DAC98D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		00DB259025FB6596004E1C16 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		00DB259325FB6685004E1C16 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		00DB259625FB6696004E1C16 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		00DB259A25FB723D004E1C16 /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
+		00DB259D25FB72CE004E1C16 /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		00DB25A025FB8436004E1C16 /* LengthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthViewController.swift; sourceTree = "<group>"; };
+		00DB25A625FC194E004E1C16 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		1F3EC87425F904AB00791D6F /* iPhone Unit Converter Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone Unit Converter Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3EC87725F904AB00791D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3EC87925F904AB00791D6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F3EC87B25F904AB00791D6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F3EC87E25F904AB00791D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F3EC88025F904AD00791D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3EC88325F904AD00791D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +69,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DB258A25FB64A2004E1C16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00DB259025FB6596004E1C16 /* ConversionViewController.swift */,
+				00DB259325FB6685004E1C16 /* WeightViewController.swift */,
+				00DB259625FB6696004E1C16 /* TemperatureViewController.swift */,
+				00DB259D25FB72CE004E1C16 /* CustomKeyboard.swift */,
+				00DB25A025FB8436004E1C16 /* LengthViewController.swift */,
+				0083A74225FE259E00DAC98D /* SpeedViewController.swift */,
+				0083A74525FE26A900DAC98D /* VolumeViewController.swift */,
+				0083A74B25FEC47A00DAC98D /* HistoryViewController.swift */,
+				0083A75E2600EA1D00DAC98D /* SettingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00DB25A525FC1930004E1C16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00DB25A625FC194E004E1C16 /* Weight.swift */,
+				0083A74825FE385800DAC98D /* Temperature.swift */,
+				0083A74E25FED62C00DAC98D /* History.swift */,
+				0083A75125FEEB7000DAC98D /* HistoryTableViewCell.swift */,
+				0083A75425FFF66400DAC98D /* Length.swift */,
+				0083A75725FFF9CA00DAC98D /* Speed.swift */,
+				0083A75A25FFFB7B00DAC98D /* Volume.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1F3EC86B25F904AB00791D6F = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +118,15 @@
 		1F3EC87625F904AB00791D6F /* iPhone Unit Converter Application */ = {
 			isa = PBXGroup;
 			children = (
+				00DB25A525FC1930004E1C16 /* Model */,
+				00DB258A25FB64A2004E1C16 /* Controllers */,
 				1F3EC87725F904AB00791D6F /* AppDelegate.swift */,
 				1F3EC87925F904AB00791D6F /* SceneDelegate.swift */,
-				1F3EC87B25F904AB00791D6F /* ViewController.swift */,
 				1F3EC87D25F904AB00791D6F /* Main.storyboard */,
 				1F3EC88025F904AD00791D6F /* Assets.xcassets */,
 				1F3EC88225F904AD00791D6F /* LaunchScreen.storyboard */,
 				1F3EC88525F904AD00791D6F /* Info.plist */,
+				00DB259A25FB723D004E1C16 /* CustomKeyboard.xib */,
 			);
 			path = "iPhone Unit Converter Application";
 			sourceTree = "<group>";
@@ -127,6 +191,7 @@
 				1F3EC88425F904AD00791D6F /* LaunchScreen.storyboard in Resources */,
 				1F3EC88125F904AD00791D6F /* Assets.xcassets in Resources */,
 				1F3EC87F25F904AB00791D6F /* Main.storyboard in Resources */,
+				00DB259B25FB723D004E1C16 /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +202,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3EC87C25F904AB00791D6F /* ViewController.swift in Sources */,
 				1F3EC87825F904AB00791D6F /* AppDelegate.swift in Sources */,
+				00DB259125FB6596004E1C16 /* ConversionViewController.swift in Sources */,
+				0083A75225FEEB7000DAC98D /* HistoryTableViewCell.swift in Sources */,
+				00DB259E25FB72CE004E1C16 /* CustomKeyboard.swift in Sources */,
+				0083A74C25FEC47A00DAC98D /* HistoryViewController.swift in Sources */,
+				0083A75F2600EA1D00DAC98D /* SettingViewController.swift in Sources */,
 				1F3EC87A25F904AB00791D6F /* SceneDelegate.swift in Sources */,
+				00DB259425FB6685004E1C16 /* WeightViewController.swift in Sources */,
+				0083A75825FFF9CA00DAC98D /* Speed.swift in Sources */,
+				0083A75525FFF66400DAC98D /* Length.swift in Sources */,
+				00DB25A125FB8436004E1C16 /* LengthViewController.swift in Sources */,
+				0083A74925FE385800DAC98D /* Temperature.swift in Sources */,
+				0083A74625FE26A900DAC98D /* VolumeViewController.swift in Sources */,
+				0083A74325FE259E00DAC98D /* SpeedViewController.swift in Sources */,
+				0083A74F25FED62C00DAC98D /* History.swift in Sources */,
+				00DB259725FB6696004E1C16 /* TemperatureViewController.swift in Sources */,
+				0083A75B25FFFB7B00DAC98D /* Volume.swift in Sources */,
+				00DB25A725FC194E004E1C16 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
