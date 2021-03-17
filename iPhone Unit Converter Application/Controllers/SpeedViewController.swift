@@ -19,7 +19,7 @@ class SpeedViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var customKeyboard: CustomKeyboard!
     
     let speed : Speed = Speed(meterSec: 0.0, kmHour: 0.0, milesHour: 0.0, nauticalMilesHour: 0.0)
-    var decimalpoint:Int = 0
+    var decimalpoint:Int = 2
     
     
     override func viewDidLoad() {

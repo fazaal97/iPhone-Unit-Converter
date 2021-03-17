@@ -14,10 +14,10 @@ class VolumeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ukPintTF: UITextField!
     @IBOutlet weak var fluidOunceTF: UITextField!
     @IBOutlet weak var millilitreTF: UITextField!
-    @IBOutlet weak var cutomKeyboard: CustomKeyboard!
+    @IBOutlet weak var customKeyboard: CustomKeyboard!
     
     let voulume: Volume = Volume(ukGallon: 0.0, litre: 0.0, ukPint: 0.0, fluidOunce: 0.0, millilitre: 0.0)
-    var decimalpoint:Int = 0
+    var decimalpoint:Int = 2
     
     
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ class VolumeViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        cutomKeyboard.activeTextField = textField
+        customKeyboard.activeTextField = textField
     }
     
     @IBAction func ukGallonChange(_ sender: UITextField) {

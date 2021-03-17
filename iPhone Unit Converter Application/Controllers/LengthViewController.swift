@@ -19,7 +19,7 @@ class LengthViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var CustomKeyboard: CustomKeyboard!
     
     let length : Length = Length(meter: 0.0, km: 0.0, mile: 0.0, cm: 0.0, mm: 0.0, yard: 0.0, inch: 0.0)
-    var decimalpoint:Int = 0
+    var decimalpoint:Int = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()

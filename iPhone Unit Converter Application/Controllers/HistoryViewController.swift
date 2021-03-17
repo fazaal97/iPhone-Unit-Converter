@@ -36,7 +36,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var historyTable: UITableView!
     
     var savedhistories = [History]()
-    var calculationType = "WeightHistory"
+    var conversionType = "WeightHistory"
     var icon: UIImage = UIImage(named: "icons8-weight-filled-50")!
     var history : [String] = [String]()
 
@@ -50,7 +50,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        recallHistory(type: calculationType, icon: icon)
+        recallHistory(type: conversionType, icon: icon)
         DispatchQueue.main.async {
             self.historyTable.reloadData()
         }
@@ -61,25 +61,28 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBAction func segementedControllChnage(_ sender: UISegmentedControl) {
         switch segmentedControll.selectedSegmentIndex {
         case 0:
-            calculationType = "WeightHistory"
+            conversionType = "WeightHistory"
             icon = UIImage(named: "icons8-weight-filled-100")!
         case 1:
-            calculationType = "TempHistory"
+            conversionType = "TempHistory"
             icon = UIImage(named: "icons8-temperature-filled-100")!
         case 2:
-            calculationType = "LengthHistory"
+            conversionType = "LengthHistory"
             icon = UIImage(named: "icons8-width-filled-100")!
         case 3:
-            calculationType = "SpeedHistory"
+            conversionType = "SpeedHistory"
             icon = UIImage(named: "icons8-dashboard-filled-100")!
         case 4:
-            calculationType = "VolumeHistory"
+            conversionType = "VolumeHistory"
             icon = UIImage(named: "icons8-volume-101")!
+        case 5:
+            conversionType = "TimeHistory"
+            icon = UIImage(named: "icons8-alarm-clock-100")!
         default:
             break
         }
         
-        recallHistory(type: calculationType, icon: icon)
+        recallHistory(type: conversionType, icon: icon)
         DispatchQueue.main.async {
             self.historyTable.reloadData()
         }
@@ -87,7 +90,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func recallHistory(type: String, icon: UIImage) {
         savedhistories = []
-        let historyList = UserDefaults.standard.value(forKey: calculationType) as? [String]
+        let historyList = UserDefaults.standard.value(forKey: conversionType) as? [String]
         
         if historyList?.count ?? 0 > 0 {
             for calculation in historyList! {

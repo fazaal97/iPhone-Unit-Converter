@@ -29,6 +29,8 @@
 		1F3EC87F25F904AB00791D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EC87D25F904AB00791D6F /* Main.storyboard */; };
 		1F3EC88125F904AD00791D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EC88025F904AD00791D6F /* Assets.xcassets */; };
 		1F3EC88425F904AD00791D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3EC88225F904AD00791D6F /* LaunchScreen.storyboard */; };
+		1FF2200B26029C5500726443 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2200A26029C5500726443 /* TimeViewController.swift */; };
+		1FF2200E26029C8F00726443 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2200D26029C8F00726443 /* Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		1F3EC88025F904AD00791D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3EC88325F904AD00791D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3EC88525F904AD00791D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FF2200A26029C5500726443 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		1FF2200D26029C8F00726443 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				0083A74525FE26A900DAC98D /* VolumeViewController.swift */,
 				0083A74B25FEC47A00DAC98D /* HistoryViewController.swift */,
 				0083A75E2600EA1D00DAC98D /* SettingViewController.swift */,
+				1FF2200A26029C5500726443 /* TimeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 				0083A75425FFF66400DAC98D /* Length.swift */,
 				0083A75725FFF9CA00DAC98D /* Speed.swift */,
 				0083A75A25FFFB7B00DAC98D /* Volume.swift */,
+				1FF2200D26029C8F00726443 /* Time.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,11 +214,13 @@
 				00DB259E25FB72CE004E1C16 /* CustomKeyboard.swift in Sources */,
 				0083A74C25FEC47A00DAC98D /* HistoryViewController.swift in Sources */,
 				0083A75F2600EA1D00DAC98D /* SettingViewController.swift in Sources */,
+				1FF2200B26029C5500726443 /* TimeViewController.swift in Sources */,
 				1F3EC87A25F904AB00791D6F /* SceneDelegate.swift in Sources */,
 				00DB259425FB6685004E1C16 /* WeightViewController.swift in Sources */,
 				0083A75825FFF9CA00DAC98D /* Speed.swift in Sources */,
 				0083A75525FFF66400DAC98D /* Length.swift in Sources */,
 				00DB25A125FB8436004E1C16 /* LengthViewController.swift in Sources */,
+				1FF2200E26029C8F00726443 /* Time.swift in Sources */,
 				0083A74925FE385800DAC98D /* Temperature.swift in Sources */,
 				0083A74625FE26A900DAC98D /* VolumeViewController.swift in Sources */,
 				0083A74325FE259E00DAC98D /* SpeedViewController.swift in Sources */,

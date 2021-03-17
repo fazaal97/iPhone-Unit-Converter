@@ -22,7 +22,7 @@ class WeightViewController: UIViewController , UITextFieldDelegate {
     
     let weight : Weight = Weight(kg: 0.0, pound: 0.0, ounce: 0.0, gram: 0.0, stone: 0.0, stonePound: 0.0)
     
-    var decimalpoint:Int = 0
+    var decimalpoint:Int = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()

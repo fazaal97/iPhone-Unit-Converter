@@ -17,7 +17,7 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
     
     var temp : Temperature = Temperature(celsius: 0.0, farenheit: 0.0, kelvin: 0.0)
     
-    var decimalpoint:Int = 0
+    var decimalpoint:Int = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         CustomKeyboard.activeTextField = textField
     }
     

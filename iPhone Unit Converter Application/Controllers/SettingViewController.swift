@@ -12,12 +12,12 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var sliderDecimal: UISlider!
     @IBOutlet weak var labelDecimal: UILabel!
     
-    var decimalPlace:Int = 0
+    var decimalPlace:Int = 2
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        labelDecimal.text = String(describing: Int(2))
         if let value = UserDefaults.standard.value(forKey: "decimalPoint") as? Double {
             sliderDecimal.value = Float(value)
             labelDecimal.text = String(describing: Int(value))
