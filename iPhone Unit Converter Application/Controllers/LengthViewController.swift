@@ -235,6 +235,9 @@ class LengthViewController: UIViewController , UITextFieldDelegate {
         }
         arr.append(saveLength)
         defaults.set(arr, forKey: "LengthHistory")
+        let alert = UIAlertController(title: "Success", message: "The conversions saved successfully!", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
     }
     

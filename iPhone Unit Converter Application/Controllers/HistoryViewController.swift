@@ -9,6 +9,8 @@ import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var deleteHistory: UIBarButtonItem!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return savedhistories.count
     }
@@ -19,7 +21,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.labelConversionHistory.numberOfLines = 3
         cell.labelConversionHistory.text = String(savedhistories[indexPath.row].getUnitConversion())
         cell.unitIcon.image = savedhistories[indexPath.row].getUnitIcon()
-
+        
         
         cell.isUserInteractionEnabled = false
         cell.contentView.backgroundColor = UIColor(red: 1/255, green: 21/255, blue: 22/255, alpha: 1.0)
@@ -39,7 +41,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     var conversionType = "WeightHistory"
     var icon: UIImage = UIImage(named: "icons8-weight-filled-50")!
     var history : [String] = [String]()
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +58,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         
     }
-
+    
     
     @IBAction func segementedControllChnage(_ sender: UISegmentedControl) {
         switch segmentedControll.selectedSegmentIndex {
@@ -100,11 +102,36 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
-
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-
-
-   
+    
+    
+    @IBAction func clearHistoryChnage(_ sender: UIBarButtonItem) {
+        if savedhistories.count > 0 {
+            UserDefaults.standard.set([], forKey: conversionType)
+            
+            let alert = UIAlertController(title: "Success", message: "The saved conversions were successfully deleted!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            // refetch hitory and reload table
+            recallHistory(type: conversionType, icon: icon)
+            DispatchQueue.main.async {
+                self.historyTable.reloadData()
+            }
+            displayClearHistoryBtn()
+        }
+    }
+    
+    func displayClearHistoryBtn() {
+        if savedhistories.count > 0 {
+            self.navigationItem.rightBarButtonItem!.isEnabled = true;
+        } else {
+            self.navigationItem.rightBarButtonItem!.isEnabled = false;
+        }
+    }
+    
+    
 }

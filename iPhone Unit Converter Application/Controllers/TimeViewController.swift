@@ -211,6 +211,10 @@ class TimeViewController: UIViewController, UITextFieldDelegate {
         }
         arr.append(savedString)
         defaults.set(arr, forKey: "TimeHistory")
+        
+        let alert = UIAlertController(title: "Success", message: "The conversions saved successfully!", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func resetTF(_ sender: UIButton) {

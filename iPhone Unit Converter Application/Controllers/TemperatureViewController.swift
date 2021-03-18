@@ -77,7 +77,7 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
             temp.celsius = (doubleTFValue - 32) * 5/9
             temp.kelvin = (doubleTFValue - 32) * 5/9 + 273.15
             
-            celsiusTextField.text = "\(temp.celsius)"
+            celsiusTextField.text = "\(String(format: "%.\(decimalpoint)f",temp.celsius))"
             kelvinTextField.text = "\(String(format: "%.\(decimalpoint)f",temp.kelvin))"
             
             
@@ -97,7 +97,7 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
             temp.celsius = doubleTFValue - 273.15
             temp.farenheit = (doubleTFValue - 273.15) * 9/5 + 32
             
-            celsiusTextField.text = "\(temp.celsius)"
+            celsiusTextField.text = "\(String(format: "%.\(decimalpoint)f",temp.celsius))"
             fahrenheitTextField.text = "\(String(format: "%.\(decimalpoint)f",temp.farenheit))"
             
             
@@ -117,13 +117,16 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onSave(_ sender: UIButton) {
         let defaults = UserDefaults.standard
-        let savedString = "\(temp.celsius) celcius = \(String(format: "%.\(decimalpoint)f",temp.farenheit)) farenhiet = \(String(format: "%.\(decimalpoint)f",temp.kelvin)) kelvin"
+        let savedString = "\(String(format: "%.\(decimalpoint)f",temp.celsius)) celcius = \(String(format: "%.\(decimalpoint)f",temp.farenheit)) farenhiet = \(String(format: "%.\(decimalpoint)f",temp.kelvin)) kelvin"
         var arr = defaults.array(forKey: "TempHistory") as? [String] ?? []
         if arr.count >= 5 {
             arr = Array(arr.suffix(5 - 1))
         }
         arr.append(savedString)
         defaults.set(arr, forKey: "TempHistory")
+        let alert = UIAlertController(title: "Success", message: "The conversions saved successfully!", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
     }
     

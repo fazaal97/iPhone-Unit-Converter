@@ -221,6 +221,10 @@ class WeightViewController: UIViewController , UITextFieldDelegate {
         }
         arr.append(saveWeights)
         defaults.set(arr, forKey: "WeightHistory")
+        
+        let alert = UIAlertController(title: "Success", message: "The conversions saved successfully!", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func resetFileds(_ sender: UIButton) {
